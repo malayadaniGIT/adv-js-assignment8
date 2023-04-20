@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+<style>
+    header{
+   margin-left: 400px;
+   font-size: 30px;
+}
+form{
+    margin-left: 400px;
+    margin-top: 50px;
+}
+
+input{
+    margin-bottom: 30px;
+}
+label{
+    font-size: 20px;
+}
+button{
+    background-color: rgb(232, 239, 237);
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+}
+.radio {
+    
+    margin-left: 400px;
+    margin-top: 50px;
+    
+}
+#elements-container{
+    margin-left: 400px;
+    margin-top: 50px;
+    width: 400px;
+    height: auto;
+    background-color:rgba(127, 255, 212,.4);
+    border-radius: 10px;
+    padding-left: 15px;
+   
+
+
+}
+#elements-container button{
+    margin-left: 150px;
+    background-color: rgba(116, 55, 55, 0.4);
+    border: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+   
+    
+}
+#elements-container:hover{
+    background-color: beige;
+
+}
+#elements-container button:hover{
+    background-color: rgb(255, 0, 0);
+    color: aliceblue;
+
+}
+footer{
+    margin-left: 1200px;
+    color: blue;
+}
+
+
+button:hover{
+    background-color: #57801a;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>DOM Elements Example</h1>
+      </header>
+      <main>
+       <div class="main">
+        <form>
+            <label for="name-input">Name:</label>
+            <input type="text" id="name-input" />
+            <br />
+            <label for="gender-input">Gender:</label>
+            <input type="text" id="gender-input" />
+            <br />
+            <button type="submit">Submit</button>
+          </form>
+       </div>
+       <div class="radio">
+        <label for="male-filter">Male</label>
+        <input type="radio" id="male-filter" name="gender-filter" value="male" />
+        <label for="female-filter">Female</label>
+        <input type="radio" id="female-filter" name="gender-filter" value="female" />
+      </div>
+        <div id="elements-container"></div>
+       
+      </main>
+      <footer>
+        <p>&copy; 2023 Example Company</p>
+      </footer>
+
+   <script src="index.js"></script>
+
+    
+</body>
+</html>
